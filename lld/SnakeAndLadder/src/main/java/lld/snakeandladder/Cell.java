@@ -1,4 +1,4 @@
-package lld.SnakeAndLadder;
+package lld.snakeandladder;
 
 public class Cell {
     int position, finalPosition;
@@ -14,6 +14,10 @@ public class Cell {
 
     public void setFinalPosition(int finalPosition) {
         this.finalPosition = finalPosition;
+    }
+
+    public int getPosition() {
+        return position;
     }
 
     public int getFinalPosition() {

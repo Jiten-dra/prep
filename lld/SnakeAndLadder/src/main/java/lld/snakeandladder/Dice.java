@@ -1,4 +1,4 @@
-package lld.SnakeAndLadder;
+package lld.snakeandladder;
 
 import java.util.Random;
 

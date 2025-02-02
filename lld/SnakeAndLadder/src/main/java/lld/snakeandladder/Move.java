@@ -1,4 +1,4 @@
-package lld.SnakeAndLadder;
+package lld.snakeandladder;
 
 public class Move {
     Player player;
@@ -17,6 +17,10 @@ public class Move {
 
     public int getFinalPosition() {
         return finalPosition;
+    }
+
+    int getDiceValue() {
+        return diceRoll;
     }
 
     @Override

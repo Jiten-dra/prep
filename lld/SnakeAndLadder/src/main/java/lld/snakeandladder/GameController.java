@@ -1,4 +1,4 @@
-package lld.SnakeAndLadder;
+package lld.snakeandladder;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -18,7 +18,6 @@ public class GameController {
         System.out.println("winPos: "+ winPos);
         moveHistory = new ArrayList<>();
         queue = new LinkedList<>();
-        queue.addAll(game.getAllPlayers());
     }
 
     Move makeMove(Player player) {
@@ -36,6 +35,7 @@ public class GameController {
     }
 
     void start(){
+        queue.addAll(game.getAllPlayers());
         while (!game.isFinished()) {
             Player currPlayer = queue.poll();
             System.out.printf("current turn of player: %s%n", currPlayer.getName());

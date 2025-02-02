@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": ["./"],
+    "java.project.outputPath": "out",
+    "java.project.referencedLibraries": [
+        "/Users/jitendra/myFiles/Software/java-jar/junit-jupiter-api-5.10.0-javadoc.jar",
+        "/Users/jitendra/myFiles/Software/java-jar/junit-jupiter-engine-5.10.0-javadoc.jar",
+        "/Users/jitendra/myFiles/Software/java-jar/junit-platform-console-standalone-1.10.0-javadoc.jar"
+    ]
+}

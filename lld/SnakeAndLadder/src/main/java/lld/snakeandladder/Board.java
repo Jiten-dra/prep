@@ -1,4 +1,4 @@
-package lld.SnakeAndLadder;
+package lld.snakeandladder;
 
 import java.util.List;
 import java.util.Random;
@@ -31,7 +31,7 @@ public class Board {
         for (int j = 0; j < ladderCount; j++) {
             int ladderStart = rand.nextInt(cellCount-10) + 1;
             int offset = Math.min(cellCount-1, ladderStart + 10);
-            int ladderEnd = offset + rand.nextInt(cellCount - 1 - offset) + 1;
+            int ladderEnd = offset + rand.nextInt(Math.max(1,cellCount - 1 - offset)) + 1;
             System.out.printf("ladder %d head %d end %d%n", j, ladderStart, ladderEnd);
             cells.get(ladderStart).setFinalPosition(ladderEnd);
             cells.get(ladderStart).setType(CellType.LADDER);

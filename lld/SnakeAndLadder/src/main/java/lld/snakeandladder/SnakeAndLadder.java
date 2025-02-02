@@ -1,4 +1,4 @@
-package lld.SnakeAndLadder;
+package lld.snakeandladder;
 
 public class SnakeAndLadder {
     public static void main(String[] args) {
